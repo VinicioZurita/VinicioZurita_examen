@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VinicioZurita_examen.MainPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Vertical" >
+            <Image Source="LOGO.png" WidthRequest="300" HeightRequest="150" HorizontalOptions="Center"></Image>
+        </StackLayout>
+        
+        <Label Text="LOGIN" HorizontalOptions="Center"  TextColor="#044c84" FontSize="30" Padding="30,0,30,0"/>
+        
+        <Frame BackgroundColor="#044c84" Padding="2" CornerRadius="1">
+            <Label Text="Usuario:" TextColor="White" FontSize="22" Padding="30,0,30,0"/>
+        </Frame>
+        
+        <Entry x:Name="txtUsuario"/>
+        
+        <Frame BackgroundColor="#044c84" Padding="2" CornerRadius="1">
+            <Label Text="Clave:" TextColor="White" FontSize="22" Padding="30,0,30,0"/>
+        </Frame>
+        
+        <Entry x:Name="txtClave" IsPassword="True"/>
+
+        <Button x:Name="btnIngresar" CornerRadius="100" Text="Ingresar" TextColor="White" FontSize="20" BackgroundColor="#0474c4" Clicked="btnIngresar_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>

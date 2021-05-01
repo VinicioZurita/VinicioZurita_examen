@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VinicioZurita_examen.Registro">
+    <ContentPage.Content>
+        <Grid RowSpacing="10" ColumnSpacing="10" Padding="10" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" x:Name="lbUsuario" FontSize="20"  TextColor="#044c84"/>
+            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" Text="Curso: Xamarin - Costo: $1800"  HorizontalOptions="Center" FontSize="20"  TextColor="Black"/>
+            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6" Text="REGISTRO DE PARTICIPANTES"   HorizontalOptions="Center" FontSize="Title"  TextColor="#045c84"/>
+
+            <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Text="* Nombre y Apellido:"  FontSize="Subtitle"  TextColor="Black"/>
+            <Entry Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" x:Name="txtNombre" Keyboard="Plain"  TextColor="Black"/>
+            <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Text="* Cuota Inicial:"  FontSize="Subtitle"  TextColor="Black"/>
+            <Entry Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="3" x:Name="txtPI" Keyboard="Numeric"  TextColor="Black"/>
+
+            <Label Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="6" x:Name="txtSaldo" Text="Saldo:"  FontSize="Subtitle"  TextColor="Black"/>
+            <Label Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="6" x:Name="txtDiv" Text="Cuotas Individuales:" FontSize="Subtitle"  TextColor="Black"/>
+            <Label Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="6" Text="Recargo autorizado (5%): $90 en cada cuota." FontSize="Subtitle"  TextColor="Green"/>
+
+            <Label Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" Text="Cuota 1"   FontSize="Subtitle"  TextColor="Black"/>
+            <Entry Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" x:Name="txtCuota1"  IsReadOnly="True"></Entry>
+
+            <Label Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2" Text="Cuota 2"   FontSize="Subtitle"  TextColor="Black"/>
+            <Entry Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2" x:Name="txtCuota2"  IsReadOnly="True"></Entry>
+
+            <Label Grid.Row="9" Grid.Column="4" Grid.ColumnSpan="2" Text="Cuota 3"   FontSize="Subtitle"  TextColor="Black"/>
+            <Entry Grid.Row="10" Grid.Column="4" Grid.ColumnSpan="2" x:Name="txtCuota3" IsReadOnly="True"></Entry>
+
+            <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="6" x:Name="btnCalcular" HorizontalOptions="Center" Text="Calcular" TextColor="White" BackgroundColor="#044c84" FontSize="Subtitle" Clicked="btnCalcular_Clicked"/>
+            <Button Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="6" x:Name="btnGuardar" HorizontalOptions="Center" Text="Guardar" TextColor="White" BackgroundColor="#0474c4" FontSize="Subtitle" Clicked="btnGuardar_Clicked" IsEnabled="False"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
